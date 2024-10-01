@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.jpg" alt="Logo" width="50" /> Furniture Store
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#banner">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#feedback">Feedback</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-outline-light" href="#contact"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- BANNER SECTION -->
+
+    <section id="banner" class="banner">
+      <div class="text-center">
+        <!-- <h1 class="display-4">Welcome to Our Furniture Store</h1>
+            <p class="lead">Quality furniture for your home</p> -->
+      </div>
+    </section>
+
+    <!-- COMPANY DESCCRIPTION -->
+
+    <section id="company-description" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">About Our Company</h2>
+        <p class="text-center">
+          We provide high-quality furniture crafted with care and precision.
+          From living room sets to bedroom essentials, we ensure comfort and
+          elegance in every piece.
+        </p>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+
+    <section id="products" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Our Products</h2>
+        <div
+          id="productCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <!-- Carousel Item 1 -->
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card product-card">
+                    <img
+                      src="images/sofa.jpg"
+                      class="card-img-top rounded"
+                      alt="Sofa"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Sofa</h5>
+                      <p class="card-text">Price: $500</p>
+                      <p>⭐⭐⭐⭐⭐</p>
+                      <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card product-card">
+                    <img
+                      src="images/dining-table.jpg"
+                      class="card-img-top rounded"
+                      alt="Dining Table"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Dining Table</h5>
+                      <p class="card-text">Price: $300</p>
+                      <p>⭐⭐⭐⭐</p>
+                      <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card product-card">
+                    <img
+                      src="images/dining-chair.jpg"
+                      class="card-img-top rounded"
+                      alt="Dining Chair"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Dining Chair</h5>
+                      <p class="card-text">Price: $150</p>
+                      <p>⭐⭐⭐⭐⭐</p>
+                      <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousel Item 2 -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card product-card">
+                    <img
+                      src="images/bed.jpg"
+                      class="card-img-top rounded"
+                      alt="Bed"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Bed</h5>
+                      <p class="card-text">Price: $800</p>
+                      <p>⭐⭐⭐⭐⭐</p>
+                      <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card product-card">
+                    <img
+                      src="images/dresser.jpg"
+                      class="card-img-top rounded"
+                      alt="Dresser"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Dresser</h5>
+                      <p class="card-text">Price: $400</p>
+                      <p>⭐⭐⭐⭐</p>
+                      <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card product-card">
+                    <img
+                      src="images/nightstand.jpg"
+                      class="card-img-top rounded"
+                      alt="Nightstand"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Nightstand</h5>
+                      <p class="card-text">Price: $120</p>
+                      <p>⭐⭐⭐⭐⭐</p>
+                      <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousel Item 3 -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card product-card">
+                    <img
+                      src="images/tv-stand.jpg"
+                      class="card-img-top rounded"
+                      alt="Coffee Table"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Coffee Table</h5>
+                      <p class="card-text">Price: $180</p>
+                      <p>⭐⭐⭐⭐⭐</p>
+                      <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card product-card">
+                    <img
+                      src="images/dresser.jpg"
+                      class="card-img-top rounded"
+                      alt="Stool"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Stool</h5>
+                      <p class="card-text">Price: $60</p>
+                      <p>⭐⭐⭐⭐</p>
+                      <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card product-card">
+                    <img
+                      src="images/table.jpg"
+                      class="card-img-top rounded"
+                      alt="Desk"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Desk</h5>
+                      <p class="card-text">Price: $220</p>
+                      <p>⭐⭐⭐⭐⭐</p>
+                      <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousel Item 4 -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card product-card">
+                    <img
+                      src="images/bookcase.jpg"
+                      class="card-img-top rounded"
+                      alt="Bookcase"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">Bookcase</h5>
+                      <p class="card-text">Price: $350</p>
+                      <p>⭐⭐⭐⭐⭐</p>
+                      <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card product-card">
+                    <img
+                      src="images/tv-stand.jpg"
+                      class="card-img-top rounded"
+                      alt="TV Stand"
+                    />
+                    <div class="card-body text-center">
+                      <h5 class="card-title">TV Stand</h5>
+                      <p class="card-text">Price: $280</p>
+                      <p>⭐⭐⭐⭐</p>
+                      <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel Controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#productCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#productCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEEDBACK -->
+    <div class="feedback-container">
+      <h2 class="text-center">Feedback Form</h2>
+      <form id="feedbackForm">
+        <!-- Name -->
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            required
+          />
+        </div>
+        <!-- Email -->
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+        <!-- Phone -->
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="phone"
+            name="phone"
+            required
+          />
+        </div>
+        <!-- Feedback -->
+        <div class="mb-3">
+          <label for="feedback" class="form-label">Feedback</label>
+          <textarea
+            class="form-control"
+            id="feedback"
+            name="feedback"
+            rows="3"
+            required
+          ></textarea>
+        </div>
+        <!-- Additional Comments -->
+        <div class="mb-3">
+          <label for="comments" class="form-label">Additional Comments</label>
+          <textarea
+            class="form-control"
+            id="comments"
+            name="comments"
+            rows="3"
+          ></textarea>
+        </div>
+        <!-- Questions with 5 answer choices each -->
+        <div class="mb-3">
+          <label class="form-label">Question 1</label>
+          <select class="form-select" name="question1" required>
+            <option value="">Select an option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+            <option value="5">Option 5</option>
+          </select>
+        </div>
+        <!-- Repeat for Questions 2-5 -->
+        <div class="mb-3">
+          <label class="form-label">Question 2</label>
+          <select class="form-select" name="question2" required>
+            <option value="">Select an option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+            <option value="5">Option 5</option>
+          </select>
+        </div>
+        <!-- Question 3, 4, 5 as above -->
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-dark w-100">
+          Submit Feedback
+        </button>
+      </form>
+    </div>
+
+    <!-- Feedback Modal -->
+    <div
+      class="modal fade"
+      id="feedbackModal"
+      tabindex="-1"
+      aria-labelledby="feedbackModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="feedbackModalLabel">
+              Feedback Submitted
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">Thank you for your feedback!</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHATBOT -->
+
+<!-- Chatbot Section -->
+<!-- Chatbot Toggle Button -->
+<button id="toggleChatbot" class="chatbot-toggle-btn">Chat</button>
+
+<!-- Chatbot Section (Initially Hidden) -->
+<div id="chatbot" class="chatbot-box">
+  <div class="chatbot-header">
+    <h5>Chatbot</h5>
+  </div>
+  <div id="chatbot-content" class="chatbot-content">
+    <p>Hello! How can I help you today?</p>
+    <div id="response" class="chatbot-response"></div>
+    <div id="chatbot-options">
+      <button class="btn btn-info chatbot-btn" onclick="handleOption('availability')">Availability Date</button>
+      <button class="btn btn-info chatbot-btn" onclick="handleOption('priority')">Change Priority</button>
+      <button class="btn btn-info chatbot-btn" onclick="handleOption('delivery')">Delivery Charge</button>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- FOOTER -->
+
+    <footer id="contact" class="bg-dark text-white text-center py-4">
+      <p>&copy; 2024 Your Furniture Store. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+    
+  </body>
+</html>
